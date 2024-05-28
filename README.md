@@ -97,3 +97,25 @@ git log
 ### 7. Head
 
 Head - это файл находящий в скрытой папке *.git*. Он содержит указатель на дерикторию хранения хэша последнего коммита
+
+### 8. Статусы файлов
+
+Существует 4 статуса:
+
+- untracked
+- staged
+- modified
+- tracked
+
+Описать их работу можно следующей диаграммой:
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked;
+  tracked   --> modified;
+  modified -- "git add" --> staged;
+
+```
+
+
