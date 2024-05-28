@@ -53,7 +53,7 @@ git add --all #Добавляем файлы
 git commit -m "Первый коммит" #сохраняем
 ```
 
-### 3. Связь git и github
+### 4. Связь git и github
 
 Регирстрируемся на [гитхабе](https://github.com)
 
@@ -75,4 +75,12 @@ git remote add origin git@github.com:%ИМЯ_АККАУНТА%/first-project.git
 ```bash
 cd ~/dev/first-project
 git push -u origin main
+```
+
+### 5. Хэш
+
+Хэш - главный идентификатор коммита. Его можно увидеть, если ввести команду:
+
+```bash
+git log
 ```
